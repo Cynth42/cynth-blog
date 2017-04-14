@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
     devise_for :users
     
-    #nested routes
+#nested routes
     resources :posts do
         resources :comments
     end
